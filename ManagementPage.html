@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grootant Employee Details Management</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="ISO-8859-1">
+<style>
+.btn-group button {
+  background-color: #4CAF50;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:green;
+  color: white;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+<h2 align="center" >Please Choose Your Option Below</h2>
+<hr>
+<div class="btn-group" style="width:100%">
+  <button style="width:33.3%" onclick="location.href='Viewdetails.html'" >To View Employee Details</button>
+  <button style="width:33.3%" onclick="location.href='Adddetails.html'">To Add Employee Details</button>
+  <button style="width:33.3%" onclick="location.href='Updatedetails.html'">To Update Employee Details</button>
+<hr>
+</div>
+<h2 style="text-align: center;"><img src="grt.png" alt="logo" width="50" height="50">Aspire System</h2>
+
+<div class="footer">
+        	<p>&copy;All Rights Are Reserved 2021</p> 
+        </div>
+</body>
+</html>

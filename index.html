@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To Grootant Employee Details Management</title>
+	<link rel="icon" href="grt.ico" type="image/x-icon">
+<style>   
+Body 
+{  
+ 	 font-family: Calibri;    
+}  
+button {   
+       background-color:green;   
+       width: 100%;  
+        color: white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solidwhite;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbutton {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }     
+ .container {   
+        padding: 25px;  
+    } 
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:green;
+  color: white;
+  text-align: center;
+}  
+</style>
+<script type="text/javascript">
+function validation()
+{
+var a = document.form.username.value;
+if(a=="")
+{
+alert("Please Enter Your Name");
+document.form.username.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters in username");
+document.form.username.select();
+return false;
+}
+}
+</script>   
+</head>
+<body>
+<h2 style="text-align: center;"><img src="grt.png" alt="logo" width="23" height="23">Grootant Employee Details Management Portal</h2>
+<hr>
+	<marquee behavior="scroll" direction="left" style="color:DarkViolet;" >We offer robust, high-performing, feature-packed and built mobile applications to be both scalable and secure, able to handle any business and it needs.
+Empowering Businesses with World-Class Technology! slider image.Empowering Businesses with World-Class Technology!
+.</marquee>
+<hr>
+<h3 text align="center" >Login</h3>
+<form name="form" method="post" onsubmit="return validation()">  
+        <div class="container">   
+            <label>UserName : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit" formaction="LoginServlet">Login</button> 
+            <a href="otp.jsp" title="Forgot Password" id="link-reset">Forgot Password?</a>  
+            <input type="checkbox" checked="checked"> Remember My UserName
+                  
+        </div>  
+        <div class="footer">
+        	<p>&copy;All Rights Are Reserved 2021</p> 
+        </div>
+</form>  
+</body>
+</html>

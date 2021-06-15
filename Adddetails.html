@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Employee Details</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="ISO-8859-1" >
+<link rel="stylesheet" href="Adddetailsstyle.css"> 
+</head>
+<body>
+<script>
+function show()
+{
+	alert("Details are added");	
+}
+</script>
+<div>   
+         <form method="post">    
+            <h4 class="text-warning text-center pt-5">Employee Details</h4>        
+            <label>     
+              <input 
+                     type="text" 
+                     class="input" 
+                     name="EmployeeName"        
+                     placeholder="EmployeeName" required/>        
+              <div class="line-box">         
+                <div class="line"></div>        
+              </div>    
+            </label>       
+            <label>     
+              <input
+                     type="number" 
+                     class="input" 
+                     name="Experience" 
+                     placeholder="Experience" required/>      
+              <div class="line-box">        
+                <div class="line"></div>      
+              </div>    
+            </label>
+            <label>     
+              <input 
+                     type="text" 
+                     class="input" 
+                     name="Role"        
+                     placeholder="Role" required/>        
+              <div class="line-box">         
+                <div class="line"></div>        
+              </div>    
+            </label>   
+            <label>     
+              <input 
+                     type="number" 
+                     class="input" 
+                     name="Age"        
+                     placeholder="Age" required/>        
+              <div class="line-box">         
+                <div class="line"></div>        
+              </div>    
+            </label> 
+            <label>     
+              <input 
+                     type="tel" 
+                     class="input" 
+                     name="MobileNumber"        
+                     placeholder="MobileNumber" required/>        
+              <div class="line-box">         
+                <div class="line"></div>        
+              </div>    
+            </label>
+            <label>     
+              <input 
+                     type="text" 
+                     class="input" 
+                     name="Status"        
+                     placeholder="Status" required/>        
+              <div class="line-box">         
+                <div class="line"></div>        
+              </div>    
+            </label> 
+            <button type="submit" formaction="addLoginservlet" onclick="show()">Add</button>  
+          </form> 
+      </div> 
+</body>
+</html>
